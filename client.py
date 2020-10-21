@@ -1,6 +1,6 @@
 from celery import Celery
 
-app = Celery('client', broker='amqp://guest@localhost//')
+app = Celery('client', broker='amqp://guest:guest@localhost//')
 
 @app.task
 def sumarConPrint(a1, a2):
